@@ -135,12 +135,16 @@ header.sticky {
 	position: fixed;
 	right: 15px;
 	top: 10px;
-	color: var(--main);
+	color: var(--dark);
 	font-size: 1.5em;
 	z-index: 20;
 	padding: 0 7px;
 	border-radius: 4px;
 	background: #fff
+}
+
+#mobile-menu-open:hover, #mobile-menu-close:hover {
+	color:var(--main);
 }
 
 #mobile-menu-close {
@@ -152,7 +156,7 @@ header.sticky {
 	padding-right: 15px;
 	padding-top: 10px;
 	cursor: pointer;
-	color: var(--main);
+	color: var(--dark);
 }
 
 #mobile-menu-close span {
@@ -161,7 +165,8 @@ header.sticky {
 }
 
 #mobile-menu-close i {
-	vertical-align: middle
+	vertical-align: middle;
+	    font-size: 13px;
 }
 
 footer {
@@ -403,7 +408,7 @@ footer {
 	text-align: left
 }
 
-.education-block h3 {
+.education-block h4 {
 	font-weight: 500;
 	float: left;
 	margin: 0;
@@ -415,7 +420,7 @@ footer {
 	float: right
 }
 
-.education-block h4 {
+.education-block h5 {
 	color: #74808a;
 	clear: both;
 	font-weight: 500;
@@ -453,9 +458,13 @@ footer {
     -webkit-animation-iteration-count: infinite;
 }
 
+#projects a:hover {
+	text-decoration:none;
+}
+
 .project {
 	position: relative;
-	max-width: 900px;
+	max-width: 700px;
 	margin: 0 auto 30px auto;
 	overflow: hidden;
 	background: #fff;
@@ -720,7 +729,7 @@ footer {
 	#lead-down {
 		display: none
 	}
-	.education-block h3, .education-block span {
+	.education-block h4, .education-block span {
 		float: none
 	}
 	.project-image {
