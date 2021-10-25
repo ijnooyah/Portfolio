@@ -30,7 +30,11 @@
 }
 
 a:hover {
-	color:var(--main);
+	color:var(--main) !important;
+}
+a.text-dark:focus, a.text-dark:hover {
+	color:var(--main) !important;
+	text-decoration: none;
 }
 
 body {
@@ -502,8 +506,20 @@ footer {
 	transform: none
 }
 
+
 #more-projects {
 	display: none
+}
+
+#projects .card {
+	max-width:700px;
+}
+
+#projects .dropdown-toggle::after {
+    margin-left: 0;
+    vertical-align: .17em;
+    border-right: .25em solid transparent;
+    border-left: .25em solid transparent;
 }
 
 #skills {
